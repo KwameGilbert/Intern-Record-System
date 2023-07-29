@@ -1,0 +1,58 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .view-details-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-details-container h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #4CAF50; /* Green theme for the heading */
+    text-align: center; /* Center the heading */
+  }
+  
+  .view-details-container p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .view-details-container .button-container {
+    text-align: center; /* Center the buttons */
+    margin-top: 20px; /* Add some space between the details and the buttons */
+  }
+  
+  .view-details-container .edit-button,
+  .view-details-container .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-details-container .edit-button:hover,
+  .view-details-container .back-button:hover {
+    background-color: #45a049;
+  }
+  
+  .back-button {
+    margin-right: 10px;
+  }
+  

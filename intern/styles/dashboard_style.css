@@ -1,0 +1,92 @@
+/* dashboard_style.css */
+
+/* Reset some default styles */
+body, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the form container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Apply styles to the dashboard container */
+.dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Apply styles to the dashboard header */
+.dashboard-container h2 {
+    text-align: center;
+    color: #4CAF50; /* Green color scheme */
+    margin-bottom: 20px;
+    font-size: 28px; /* Adjust the font size as needed */
+}
+
+/* Apply styles to the welcome text */
+.dashboard-container p {
+    text-align: center;
+    color: #555; /* Text color */
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+
+/* Apply styles to the dashboard options */
+.dashboard-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dashboard-option {
+    width: 180px;
+    height: 60px; /* Adjust the height as needed */
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #4CAF50; /* Green color scheme */
+    color: #fff; /* Text color */
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-option a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.dashboard-option:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Apply styles to the logout link */
+.dashboard-logout {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dashboard-logout a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f44336; /* Red color scheme */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dashboard-logout a:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
