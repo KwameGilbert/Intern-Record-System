@@ -11,8 +11,6 @@ function start_session() {
     }
 }
 
-
-
 // Check if the user is logged in
 start_session();
 if (!isset($_SESSION["intern_id"])) {
@@ -54,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 // Display the pop-up modal using HTML and CSS
                 echo '<div class="modal-overlay">';
                 echo '<div class="modal">';
-                echo '<p class="modal-message">' . $name . ', your information has been updated successfully!</p>';
+                echo '<p class="modal-message">' . $name . ', your information has been updated successfully</p>';
                 echo '<a href="./intern_dashboard.php" class="modal-button">Close</a>';
                 echo '</div>';
                 echo '</div>';
