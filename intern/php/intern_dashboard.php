@@ -65,7 +65,7 @@
             echo "<div class='dashboard-options'>";
             // Provide the option to fill the internship form for the first time
             echo "<div class='dashboard-option'>";
-            echo "<a href='./isb_forms.php'>ISB FORMS</a>";
+            echo "<a href='./isb_forms.html'>ISB FORMS</a>";
             echo "</div>";
             echo "</div>";
         // Add other dashboard options or user-specific functionalities as needed

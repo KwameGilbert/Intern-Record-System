@@ -1,0 +1,60 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Form links container styles */
+.form-links-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.form-links-container h2 {
+   text-align: center;
+}
+
+.form-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display the form links in a row */
+    flex-wrap: wrap; /* Wrap the links to a new line if they exceed container width */
+    justify-content: center; /* Center the links horizontally */
+    align-items: center; /* Center the links vertically */
+}
+
+.form-links li {
+    margin: 5px; /* Add some spacing between the links */
+}
+
+.form-links li a {
+    display: inline-block; /* Display the links as inline blocks */
+    background-color: #4CAF50; /* Green color scheme */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent the links from wrapping to a new line */
+}
+
+.form-links li a:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
