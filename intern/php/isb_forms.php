@@ -1,3 +1,14 @@
+<?php
+// Start the session
+session_start();
+
+// Check if the user is logged in (if the intern_id session variable is not set)
+if (!isset($_SESSION["intern_id"])) {
+    header("Location: ./intern_login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
