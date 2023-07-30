@@ -3,14 +3,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7;
 }
 
 /* Header styles */
-.header {
-    background-color: #e3e3e4;
+.header h1{
+    background-color: #f7f7f7;
     color: #4CAF50;
     text-align: center;
     padding: 20px;
+
+}
+.header p{
+    text-align: center;
+    color: #555; /* Text color */
+    font-size: 28px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
 }
 
 /* Form links container styles */
@@ -19,21 +27,18 @@ body {
     padding: 20px;
 }
 
-.form-links-container h2 {
-    text-align: center;
-}
 
 .form-links {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px;
     display: flex; /* Display the form links in a row */
     flex-wrap: wrap; /* Wrap the links to a new line if they exceed container width */
     justify-content: center; /* Center the links horizontally */
 }
 
 .form-links li {
-    margin: 5px; /* Add some spacing between the links */
+    margin: 8px; /* Add some spacing between the links */
     flex-basis: 25%; /* Set the initial size of each link to occupy 25% of the row */
     min-width: 200px; /* Set a minimum width for the links */
 }

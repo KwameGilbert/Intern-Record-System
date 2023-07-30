@@ -18,15 +18,10 @@ if (!isset($_SESSION["intern_id"])) {
 <body>
     <div class="header">
         <h1>ISB FORMS</h1>
+        <p>Internship Forms</p>
     </div>
 
     <div class="form-links-container">
-        <h2>Internship Forms</h2>
-
-
-</div>
-
-
         <ul class="form-links">
             <li><a href="isb1.php">ISB 1 - FAMILIARSATION WITH SCHOOL ENVIRONMENT & RECORDS</a></li>
             <li><a href="isb2.php">ISB 2 - OBSERVATION OF MENTOR'S LESSONS

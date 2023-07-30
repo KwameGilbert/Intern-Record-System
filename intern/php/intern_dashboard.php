@@ -36,7 +36,7 @@
             $name = $row["first_name"];
         }
         ?>
-        <h2>Dashboard</h2>
+        <h1>Dashboard</h1>
         <p>Welcome <?php echo $name; ?></p>
 
         <?php
