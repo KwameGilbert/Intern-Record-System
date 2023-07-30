@@ -51,7 +51,7 @@ body {
     padding: 20px; /* Increase the padding to increase the link height */
     border-radius: 5px;
     text-align: center; /* Center the text within the link */
-    font-size: 16px; /* Adjust the font size as needed */
+    font-size: 18px; /* Adjust the font size as needed */
     height: 50px; /* Set a fixed height for two lines of text (adjust as needed) */
     line-height: 1.2; /* Set line-height to control the space between lines of text */
     overflow: hidden; /* Hide any text that exceeds the height */

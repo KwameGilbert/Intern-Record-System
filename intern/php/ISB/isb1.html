@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IRB 1 - Familiarisation with the School Environment and Documents/Records</title>
+</head>
+<body>
+    <h1>IRB 1</h1>
+    <h2>Familiarisation with the School Environment and Documents/Records</h2>
+
+    <p>Instruction: Complete this observation guide with your mentor. IRB 1 should be completed first week of the internship</p>
+
+    <form>
+        <label for="school_established">1. When was the school established?</label>
+        <input type="text" id="school_established" required><br>
+
+        <label for="total_students">2. What is the total number of students in the school?</label>
+        <input type="number" id="total_students" required><br>
+
+        <label for="boys_count">3. How many are boys?</label>
+        <input type="number" id="boys_count" required><br>
+
+        <label for="girls_count">4. How many are girls?</label>
+        <input type="number" id="girls_count" required><br>
+
+        <label for="female_teachers">5. What is the number of female teachers in the school?</label>
+        <input type="number" id="female_teachers" required><br>
+
+        <label for="male_teachers">6. What is the number of male teachers in the school?</label>
+        <input type="number" id="male_teachers" required><br>
+
+        <label for="non_teaching_males">7. How many non-teaching staff (if any) are males?</label>
+        <input type="number" id="non_teaching_males" required><br>
+
+        <label for="non_teaching_females">8. How many non-teaching staff (if any) are females?</label>
+        <input type="number" id="non_teaching_females" required><br>
+
+        <label for="classrooms_count">9. What is the number of classrooms in the school?</label>
+        <input type="number" id="classrooms_count" required><br>
+
+        <label for="reporting_time">10. What is the reporting time of the school?</label>
+        <input type="time" id="reporting_time" required><br>
+
+        <label for="closing_time">11. What is the closing time of the school?</label>
+        <input type="time" id="closing_time" required><br>
+
+        <p>Complete the checklist of the following items (Available, Not Available)</p>
+
+        <label for="sexual_harassment_policy">13. Sexual Harassment Policy</label>
+        <select id="sexual_harassment_policy" required>
+            <option value="Available">Available</option>
+            <option value="Not Available">Not Available</option>
+        </select><br>
+
+        <label for="national_gender_policy">14. National Gender Policy</label>
+        <select id="national_gender_policy" required>
+            <option value="Available">Available</option>
+            <option value="Not Available">Not Available</option>
+        </select><br>
+
+        <label for="inclusive_education_policy">15. Equity and Inclusive Education Policy</label>
+        <select id="inclusive_education_policy" required>
+            <option value="Available">Available</option>
+            <option value="Not Available">Not Available</option>
+        </select><br>
+
+        <label for="ges_code_of_conduct">16. GES Code of Conduct Handbook</label>
+        <select id="ges_code_of_conduct" required>
+            <option value="Available">Available</option>
+            <option value="Not Available">Not Available</option>
+        </select><br>
+
+        <label for="sanitation_policy">17. Sanitation Policy</label>
+        <select id="sanitation_policy" required>
+            <option value="Available">Available</option>
+            <option value="Not Available">Not Available</option>
+        </select><br>
+
+        <label for="school_timetable">18. School Timetable</label>
+        <select id="school_timetable" required>
+            <option value="Available">Available</option>
+            <option value="Not Available">Not Available</option>
+        </select><br>
+
+        <label for="guidance_counselling_coordinator">19. Guidance and Counselling Coordinator</label>
+        <select id="guidance_counselling_coordinator" required>
+            <option value="Available">Available</option>
+            <option value="Not Available">Not Available</option>
+        </select><br>
+
+        <label for="ict_laboratory">20. ICT Laboratory</label>
+        <select id="ict_laboratory" required>
+            <option value="Available">Available</option>
+            <option value="Not Available">Not Available</option>
+        </select><br>
+
+        <label for="date_filled">Date of Filling form:</label>
+        <input type="date" id="date_filled" value="<?php echo date('Y-m-d'); ?>" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
