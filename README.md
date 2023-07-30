@@ -30,15 +30,16 @@ The project is organized into the following main directories:
 To get started with the Internship Record System, follow these steps:
 
 1. Clone the repository to your local development environment:
-<pre><code>git clone https://github.com/KwameGilbert/Intern-Record-System.git</code><pre/>
+```bash
+git clone https://github.com/KwameGilbert/Intern-Record-System.git
+```
+3. Set up a local development environment with a web server (e.g., Apache) and PHP (>=7.0) support.
 
-2. Set up a local development environment with a web server (e.g., Apache) and PHP (>=7.0) support.
+4. Import the database schema provided in `db_connection/intern_record_system.sql` to set up the required database tables.
 
-3. Import the database schema provided in `db_connection/intern_record_system.sql` to set up the required database tables.
+5. Configure the database connection by editing the credentials in `db_connection/db_connection.php`.
 
-4. Configure the database connection by editing the credentials in `db_connection/db_connection.php`.
-
-5. Launch the web application in your browser by accessing the appropriate URL (e.g., http://localhost/Intern-Record-System/intern/intern_login.php).
+6. Launch the web application in your browser by accessing the appropriate URL (e.g., http://localhost/Intern-Record-System/intern/intern_login.php).
 
 ## Future Improvements
 
@@ -54,5 +55,4 @@ To get started with the Internship Record System, follow these steps:
 
 ## Contact
 
-For any questions or support, please reach out to 
-Email: kwamegilbert1114@gmail.com.
+For any questions or support, please reach out to [Kwame GIilbert](kwamegilbert1114@gmail.com)
