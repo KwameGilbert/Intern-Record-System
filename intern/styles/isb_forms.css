@@ -63,3 +63,21 @@ body {
     text-align: center;
     padding: 10px;
 }
+
+.back-button:hover {
+    background-color: #45a049;
+  }
+  
+  .back-button {
+    text-align: center;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    transition: background-color 0.3s ease;
+  }
+  

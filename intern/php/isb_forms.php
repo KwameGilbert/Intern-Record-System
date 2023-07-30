@@ -22,6 +22,11 @@ if (!isset($_SESSION["intern_id"])) {
 
     <div class="form-links-container">
         <h2>Internship Forms</h2>
+
+
+</div>
+
+
         <ul class="form-links">
             <li><a href="isb1.php">ISB 1 - FAMILIARSATION WITH SCHOOL ENVIRONMENT & RECORDS</a></li>
             <li><a href="isb2.php">ISB 2 - OBSERVATION OF MENTOR'S LESSONS
@@ -41,9 +46,9 @@ if (!isset($_SESSION["intern_id"])) {
     </div>
 
     <!-- Add other sections or content here if required -->
-
+   
     <div class="footer">
-        <!-- Add footer content here if needed -->
+    <a href="./intern_dashboard.php" class="back-button">Back to Dashboard</a>
     </div>
 </body>
 </html>

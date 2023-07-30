@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>View Personal Details</title>
-    <link rel="stylesheet" href="../view_details.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="../styles/view_details.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <div class="view-details-container">
@@ -27,8 +27,8 @@
         }
 
         // Retrieve the user's submitted details (if any)
-        $user_id = $_SESSION["user_id"];
-        $sql = "SELECT * FROM intern_details WHERE intern_id = $intern_id";
+        $intern_id = $_SESSION["intern_id"];
+        $sql = "SELECT * FROM intern_details WHERE intern_id = " . intval($intern_id);
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -43,7 +43,7 @@
             echo "<p><strong>Class Assigned:</strong> " . $user_details["class_assigned"] . "</p>";
             echo "<p><strong>Subject(s) Taught:</strong> " . $user_details["subjects_taught"] . "</p>";
             echo "<p><strong>Year of Internship:</strong> " . $user_details["year_of_internship"] . "</p>";
-            echo "<p><strong>Mentor ID:</strong> " .$user_details["mentor_id"] . "</p>";
+            echo "<p><strong>Mentor ID:</strong> " . $user_details["mentor_id"] . "</p>";
             echo "<p><strong>Headmaster:</strong> " . $user_details["headmaster_name"] . "</p>";
         } else {
             echo "<h3>No details found.</h3>";

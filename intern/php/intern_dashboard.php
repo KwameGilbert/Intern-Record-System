@@ -44,15 +44,18 @@
             // The user has submitted details before
             // Provide the option to edit the previously submitted details
             echo "<div class='dashboard-options'>";
-            echo "<div class='dashboard-option'>";
-            echo "<a href='./intern_form.php'>Edit Details</a>";
-            echo "</div>";
-
+        
             // Provide the option to view the details on a separate page
             echo "<div class='dashboard-option'>";
-            echo "<a href='./view_details.php'>View Details</a>";
+            echo "<a href='./view_details.php'>View Particulars</a>";
+            echo "</div>";
+          
+            // Provide the option to fill the internship form for the first time
+            echo "<div class='dashboard-option'>";
+            echo "<a href='./isb_forms.php'>ISB FORMS</a>";
             echo "</div>";
             echo "</div>";
+
         } else {
             // The user has not submitted details yet
             echo "<div class='dashboard-options'>";
@@ -62,12 +65,7 @@
             echo "</div>";
             echo "</div>";
         }
-            echo "<div class='dashboard-options'>";
-            // Provide the option to fill the internship form for the first time
-            echo "<div class='dashboard-option'>";
-            echo "<a href='./isb_forms.php'>ISB FORMS</a>";
-            echo "</div>";
-            echo "</div>";
+            
         // Add other dashboard options or user-specific functionalities as needed
         // ...
 
