@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>View Personal Details</title>
-    <link rel="stylesheet" href="../styles/view_details.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="../view_details.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <div class="view-details-container">
@@ -21,17 +21,17 @@
 
         // Check if the user is logged in
         start_session();
-        if (!isset($_SESSION["intern_id"])) { // Update to "intern_id"
+        if (!isset($_SESSION["intern_id"])) {
             header("Location: ./intern_login.php");
             exit();
         }
 
         // Retrieve the user's submitted details (if any)
-        $intern_id = $_SESSION["intern_id"]; // Update to "intern_id"
-        $sql = "SELECT * FROM intern_details WHERE intern_id = $intern_id"; // Update to "intern_id"
+        $user_id = $_SESSION["user_id"];
+        $sql = "SELECT * FROM intern_details WHERE intern_id = $intern_id";
         $result = $conn->query($sql);
 
-        if ($result && $result->num_rows > 0) {
+        if ($result->num_rows > 0) {
             $user_details = $result->fetch_assoc();
             // Display the user's details here (customize based on your form fields)
             echo "<p><strong>Name:</strong> " . $user_details["name"] . "</p>";
