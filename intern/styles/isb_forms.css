@@ -36,7 +36,6 @@ body {
     margin: 5px; /* Add some spacing between the links */
     flex-basis: 25%; /* Set the initial size of each link to occupy 25% of the row */
     min-width: 200px; /* Set a minimum width for the links */
-    
 }
 
 .form-links li a {
@@ -48,8 +47,9 @@ body {
     border-radius: 5px;
     text-align: center; /* Center the text within the link */
     font-size: 16px; /* Adjust the font size as needed */
-    white-space: normal; /* Allow the text to wrap within the link */
-    word-wrap: break-word; /* Allow long words to break and wrap to the next line */
+    height: 50px; /* Set a fixed height for two lines of text (adjust as needed) */
+    line-height: 1.2; /* Set line-height to control the space between lines of text */
+    overflow: hidden; /* Hide any text that exceeds the height */
 }
 
 .form-links li a:hover {
