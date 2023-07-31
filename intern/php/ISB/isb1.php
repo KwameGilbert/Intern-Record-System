@@ -81,9 +81,6 @@
         </div>
     </form>
 
-
-
-
 <?php
 //PHP to handle the isb_forms
 // Include the database connection file
@@ -116,7 +113,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $index_row = $result_index->fetch_assoc();
         $fname = $index_row["first_name"];
         $index = $index_row["index_number"];
-
     } 
 
     // Collect the form data
@@ -138,46 +134,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $ict_laboratory = $_POST["ict_laboratory"];
     $filling_date = $_POST["filling_date"];
 
-
     // Prepare and execute the SQL query to insert data into the "isb1" table
     $sql = "INSERT INTO isb1 (
-        intern_id,
-        index_number,
-        established_year,
-        total_students,
-        boys_students,
-        girls_students,
-        female_teachers,
-        male_teachers,
-        male_non_teaching_staff,
-        female_non_teaching_staff,
-        classrooms,
-        reporting_time,
-        closing_time,
-        sexual_harassment_policy,
-        national_gender_policy,
-        equity_inclusive_policy,
-        ict_laboratory,
-        filling_date
+        intern_id, index_number, established_year,total_students,boys_students, girls_students,female_teachers, male_teachers,male_non_teaching_staff,female_non_teaching_staff,classrooms,reporting_time,closing_time,sexual_harassment_policy,national_gender_policy, equity_inclusive_policy, ict_laboratory,filling_date
     ) VALUES (
-        '$intern_id',
-        '$index',
-        '$established_year',
-        '$total_students',
-        '$boys_students',
-        '$girls_students',
-        '$female_teachers',
-        '$male_teachers',
-        '$male_non_teaching_staff',
-        '$female_non_teaching_staff',
-        '$classrooms',
-        '$reporting_time',
-        '$closing_time',
-        '$sexual_harassment_policy',
-        '$national_gender_policy',
-        '$equity_inclusive_policy',
-        '$ict_laboratory',
-        '$filling_date'
+        '$intern_id','$index','$established_year','$total_students','$boys_students','$girls_students', '$female_teachers','$male_teachers','$male_non_teaching_staff','$female_non_teaching_staff', '$classrooms','$reporting_time','$closing_time','$sexual_harassment_policy','$national_gender_policy', '$equity_inclusive_policy', '$ict_laboratory', '$filling_date'
     )";
 
 if ($conn->query($sql) === TRUE) {
@@ -191,13 +152,9 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
-
     // Close the database connection
     $conn->close();
 }
 ?>
-
-
-
 </body>
 </html>
