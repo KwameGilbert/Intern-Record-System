@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>IRB 1 - Familiarisation with the School Environment and Documents/Records</title>
-    <link rel="stylesheet" href="../../styles/isb.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="../../styles/isb.css"> <!-- Link to CSS file -->
 </head>
 <body>
     <h1>IRB 1</h1>
@@ -44,30 +44,35 @@
         <input type="time" name="closing_time" required><br>
 
 
-        <h3>Complete the checklist of the following items (Available, Not Available)</h3>
+        <h3>Complete the checklist of the following items <br> (Available, Not Available)</h3>
+        <hr>
         <div class="radio_q">
             <label >Sexual Harassment Policy</label>
             <input type="radio" name="sexual_harassment_policy" value="Available" required> Available
             <input type="radio" name="sexual_harassment_policy" value="Not Available" required> Not Available<br>
         </div>
+        <hr>
         <div class="radio_q">
             <label >National Gender Policy</label>
             <input type="radio" name="national_gender_policy" value="Available" required> Available
             <input type="radio" name="national_gender_policy" value="Not Available" required> Not Available<br>
         </div>
+        <hr>
         <div class="radio_q">
             <label >Equity and Inclusive Education Policy</label>
             <input type="radio" name="equity_inclusive_policy" value="Available" required> Available
             <input type="radio" name="equity_inclusive_policy" value="Not Available" required> Not Available<br>
         </div>
+        <hr>
         <!-- Add more checklist items as needed -->
         <div class="radio_q">
             <label >ICT Laboratory</label>
             <input type="radio" name="ict_laboratory" value="Available" required> Available
             <input type="radio" name="ict_laboratory" value="Not Available" required> Not Available<br>
         </div>
+        <hr>
         <label>Date of Filling form:</label>
-        <input type="date" name="filling_date" value="<?php echo date('Y-m-d'); ?>" required><br>
+        <input type="date" name="filling_date" value="<?php echo date('Y-m-d'); ?>" required readonly><br>
 
         <input type="submit" name="submit" value="Submit">
     </form>

@@ -59,20 +59,31 @@ input[type="year"] {
     border-radius: 5px;
 }
 
-input[type="radio"] {
-    margin: auto;
-    display: flex;
-}
-
-.radio_q{
-    display: inline-flex;
-    width: 90%;
-    padding: auto;
+/* Apply styles to form fields and labels under radio_q */
+.radio_q label {
+    display: inline-block;
+    width: 40%; /* Adjust the width as needed */
+    font-weight: bold;
     margin-bottom: 5px;
-
-    
+    color: #555;
 }
 
+.radio_q input[type="radio"] {
+    display: inline-block;
+    width: 10%; /* Adjust the width as needed */
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
+/* Apply styles to the form header */
+.form-header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+}
 
 
 /* Apply styles to the form header */
