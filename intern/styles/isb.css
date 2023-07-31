@@ -137,6 +137,7 @@ input[type="submit"]:hover {
     color: #333;
     border: none;
     margin-left: 10px;
+    text-decoration: none;
 }
 
 .cancel-button:hover {
