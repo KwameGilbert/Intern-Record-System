@@ -26,7 +26,7 @@ h1 {
     color: #4CAF50;
 }
 
-h2,h4{
+h2,h3{
     text-align: center;
     margin-bottom: 25px;
     color: #333;
@@ -50,7 +50,7 @@ input[type="text"],
 input[type="number"],
 input[type="time"],
 input[type="date"],
-input[type="radio"],
+/*input[type="radio"],*/
 input[type="year"] {
     width: 90%; /* Adjust the width as needed */
     padding: 10px;
@@ -60,7 +60,13 @@ input[type="year"] {
 }
 
 input[type="radio"] {
-    margin-right: 10px;
+    margin: 5px;
+}
+
+.radio{
+    width: auto;
+    padding: 10px;
+    
 }
 
 /* Apply styles to the form header */
