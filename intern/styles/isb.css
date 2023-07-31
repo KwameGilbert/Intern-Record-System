@@ -50,7 +50,7 @@ input[type="text"],
 input[type="number"],
 input[type="time"],
 input[type="date"],
-/*input[type="radio"],*/
+input[type="radio"],
 input[type="year"] {
     width: 90%; /* Adjust the width as needed */
     padding: 10px;
@@ -60,14 +60,20 @@ input[type="year"] {
 }
 
 input[type="radio"] {
-    margin: 5px;
+    margin: auto;
+    display: flex;
 }
 
-.radio{
-    width: auto;
-    padding: 10px;
+.radio_q{
+    display: inline-flex;
+    width: 90%;
+    padding: auto;
+    margin-bottom: 5px;
+
     
 }
+
+
 
 /* Apply styles to the form header */
 .form-header {
