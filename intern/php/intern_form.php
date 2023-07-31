@@ -77,7 +77,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $headmaster = sanitize_input($_POST["headmaster"]);
 
             // Prepare and execute the SQL query to insert user data into the database
-            $sql = "INSERT INTO intern_details (intern_id, first_name, last_name, name, index_number, programme_of_study, school_of_practice, town, district, class_assigned, subjects_taught, year_of_internship, mentor_id, headmaster_name) VALUES ('$intern_id', '$first_name', '$last_name', '$name', '$index', '$programme', '$school', '$town', '$district', '$class', '$subjects', '$year', '$mentor_id', '$headmaster')";
+            $sql = "INSERT INTO intern_details (
+                intern_id, first_name, last_name, name, index_number, programme_of_study, school_of_practice, town, district, class_assigned, subjects_taught, year_of_internship, mentor_id, headmaster_name) VALUES ('$intern_id', '$first_name', '$last_name', '$name', '$index', '$programme', '$school', '$town', '$district', '$class', '$subjects', '$year', '$mentor_id', '$headmaster')";
 
             if ($conn->query($sql) === TRUE) {
                 // Display the pop-up modal using HTML and CSS

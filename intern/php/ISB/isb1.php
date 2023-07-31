@@ -80,5 +80,124 @@
             <a href="../isb_forms.php" class="cancel-button">Cancel</a>
         </div>
     </form>
+
+
+
+
+<?php
+//PHP to handle the isb_forms
+// Include the database connection file
+require_once "../../../db_connection/db_connection.php";
+// Include the functions file
+require_once "../../../db_connection/sanitize_input.php";
+
+// Function to start a session
+function start_session() {
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+}
+
+// Check if the user is logged in
+start_session();
+if (!isset($_SESSION["intern_id"])) {
+    header("Location: ../styles/intern_login.php");
+    exit();
+}
+
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+     // Retrieve the user's index number_format
+    $intern_id = $_SESSION["intern_id"];
+    $sql_get_index = "SELECT * FROM intern_details WHERE intern_id = $intern_id";
+    $result_index = $conn->query($sql_get_index);
+
+    if ($result_index->num_rows === 1) {
+        $index_row = $result_index->fetch_assoc();
+        $fname = $index_row["first_name"];
+        $index = $index_row["index_number"];
+
+    } 
+
+    // Collect the form data
+   
+    $established_year = $_POST["established_year"];
+    $total_students = $_POST["total_students"];
+    $boys_students = $_POST["boys_students"];
+    $girls_students = $_POST["girls_students"];
+    $female_teachers = $_POST["female_teachers"];
+    $male_teachers = $_POST["male_teachers"];
+    $male_non_teaching_staff = $_POST["male_non_teaching_staff"];
+    $female_non_teaching_staff = $_POST["female_non_teaching_staff"];
+    $classrooms = $_POST["classrooms"];
+    $reporting_time = $_POST["reporting_time"];
+    $closing_time = $_POST["closing_time"];
+    $sexual_harassment_policy = $_POST["sexual_harassment_policy"];
+    $national_gender_policy = $_POST["national_gender_policy"];
+    $equity_inclusive_policy = $_POST["equity_inclusive_policy"];
+    $ict_laboratory = $_POST["ict_laboratory"];
+    $filling_date = $_POST["filling_date"];
+
+
+    // Prepare and execute the SQL query to insert data into the "isb1" table
+    $sql = "INSERT INTO isb1 (
+        intern_id,
+        index_number,
+        established_year,
+        total_students,
+        boys_students,
+        girls_students,
+        female_teachers,
+        male_teachers,
+        male_non_teaching_staff,
+        female_non_teaching_staff,
+        classrooms,
+        reporting_time,
+        closing_time,
+        sexual_harassment_policy,
+        national_gender_policy,
+        equity_inclusive_policy,
+        ict_laboratory,
+        filling_date
+    ) VALUES (
+        '$intern_id',
+        '$index',
+        '$established_year',
+        '$total_students',
+        '$boys_students',
+        '$girls_students',
+        '$female_teachers',
+        '$male_teachers',
+        '$male_non_teaching_staff',
+        '$female_non_teaching_staff',
+        '$classrooms',
+        '$reporting_time',
+        '$closing_time',
+        '$sexual_harassment_policy',
+        '$national_gender_policy',
+        '$equity_inclusive_policy',
+        '$ict_laboratory',
+        '$filling_date'
+    )";
+
+if ($conn->query($sql) === TRUE) {
+    // Display the pop-up modal using HTML and CSS
+    echo '<div class="modal-overlay">';
+    echo '<div class="modal">';
+    echo '<p class="modal-message">' . $fname . ',  ISB 1  has been submitted successfully!</p>';
+    echo '<a href="./intern_dashboard.php" class="modal-button">Close</a>';
+    echo '</div>';
+    echo '</div>';
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+    // Close the database connection
+    $conn->close();
+}
+?>
+
+
+
 </body>
 </html>
