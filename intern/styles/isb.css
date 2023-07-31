@@ -26,9 +26,9 @@ h1 {
     color: #4CAF50;
 }
 
-h2 {
+h2,h4{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #333;
 }
 
@@ -40,7 +40,7 @@ p {
 /* Apply styles to form fields and labels */
 label {
     display: block;
-    width: 45%; /* Adjust the width as needed */
+    width: 90%; /* Adjust the width as needed */
     font-weight: bold;
     margin-bottom: 5px;
     color: #555;
@@ -52,7 +52,7 @@ input[type="time"],
 input[type="date"],
 input[type="radio"],
 input[type="year"] {
-    width: 50%; /* Adjust the width as needed */
+    width: 90%; /* Adjust the width as needed */
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;

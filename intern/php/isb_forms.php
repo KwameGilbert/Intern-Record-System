@@ -23,8 +23,8 @@ if (!isset($_SESSION["intern_id"])) {
 
     <div class="form-links-container">
         <ul class="form-links">
-            <li><a href="isb1.php">ISB 1 - FAMILIARSATION WITH SCHOOL ENVIRONMENT & RECORDS</a></li>
-            <li><a href="isb2.php">ISB 2 - OBSERVATION OF MENTOR'S LESSONS
+            <li><a href="./ISB/isb1.php">ISB 1 - FAMILIARSATION WITH SCHOOL ENVIRONMENT & RECORDS</a></li>
+            <li><a href="./ISB/isb2.php">ISB 2 - OBSERVATION OF MENTOR'S LESSONS
             </a></li>
             <li><a href="isb3.php">ISB 3 - SELECTION OF TOPICS TO BE TAUGHT</a></li>
             <li><a href="isb4.php">ISB 4 - PLANNING A LESSON WITH THE MENTOR</a></li>

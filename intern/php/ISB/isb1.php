@@ -2,13 +2,14 @@
 <html>
 <head>
     <title>IRB 1 - Familiarisation with the School Environment and Documents/Records</title>
-    <link rel="stylesheet" href="../../styles/isb1.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="../../styles/isb.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <h1>IRB 1</h1>
     <h2>Familiarisation with the School Environment and Documents/Records</h2>
-    <p>Instruction: Complete this observation guide with your mentor. IRB 1 should be completed first week of the internship</p>
+    
     <form action="" method="post">
+    <h4>Instruction: Complete this observation guide with your mentor. <br>IRB 1 should be completed first week of the internship</h4>
         <label>When was the school established?</label>
         <input type="year" name="established_year" required><br>
 
@@ -42,7 +43,7 @@
         <label>What is the closing time of the school?</label>
         <input type="time" name="closing_time" required><br>
 
-        <p>Complete the checklist of the following items (Available, Not Available)</p>
+        <h4>Complete the checklist of the following items (Available, Not Available)</h4>
         <label>Sexual Harassment Policy</label>
         <input type="radio" name="sexual_harassment_policy" value="Available" required> Available
         <input type="radio" name="sexual_harassment_policy" value="Not Available" required> Not Available<br>
