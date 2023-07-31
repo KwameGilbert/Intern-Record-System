@@ -74,7 +74,11 @@
         <label>Date of Filling form:</label>
         <input type="date" name="filling_date" value="<?php echo date('Y-m-d'); ?>" required readonly><br>
 
-        <input type="submit" name="submit" value="Submit">
+    
+        <div class="form-buttons">
+            <input type="submit" value="Submit">
+            <a href="../isb_forms.php" class="cancel-button">Cancel</a>
+        </div>
     </form>
 </body>
 </html>
