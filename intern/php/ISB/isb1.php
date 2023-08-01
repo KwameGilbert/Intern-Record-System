@@ -104,7 +104,7 @@ if (!isset($_SESSION["intern_id"])) {
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-     // Retrieve the user's index number_format
+    // Retrieve the user's index number_format
     $intern_id = $_SESSION["intern_id"];
     $sql_get_index = "SELECT * FROM intern_details WHERE intern_id = $intern_id";
     $result_index = $conn->query($sql_get_index);
