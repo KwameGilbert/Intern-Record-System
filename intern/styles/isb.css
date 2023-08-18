@@ -46,6 +46,13 @@ label {
     color: #555;
 }
 
+p label{
+    width: 50%; /* Adjust the width as needed */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
 input[type="text"],
 input[type="number"],
 input[type="time"],
