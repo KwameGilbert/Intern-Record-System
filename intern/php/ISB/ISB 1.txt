@@ -1,0 +1,30 @@
+create a form in php that will take the following details
+MAIN HEADER SHOULD BE
+IRB 1
+FAMILIARISATION WITH THE SCHOOL ENVIRONMENT AND DOCUMENTS/RECORDS
+
+Instruction: Complete this observation guide with your mentor. IRB 1 should be completed first week of the internship
+
+1. When was the school established? 
+2. what is the total number of students in the schoool?
+3. How many are boys?
+4. how many are girls?
+5.What is eh number of female teachers in the school?
+6.What is the number of male teachers in the school?
+7. How many non teaching staff (if any) are males?
+8. How many non teaching staff (if any) are females?
+9. What is the number of classrooms in teh school?
+10. What is the reporting time of the school?
+11. What is the closing time of the school?
+
+Complete the checklist of the following items( Available, Not Available)
+13. Sexual Harasment Policy
+14. National Gender Policy
+15. Equity and inclusive education policy
+16. GES Code of conduct handbook
+17. Sanitation Policy
+18. School Timetable
+19. Guidance and Counselling Coordinator
+20. ICT Laboratory
+
+Date of Filling form(should be prefilled with the the current days date and editable)

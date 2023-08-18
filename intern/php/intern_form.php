@@ -11,8 +11,6 @@ function start_session() {
     }
 }
 
-
-
 // Check if the user is logged in
 start_session();
 if (!isset($_SESSION["intern_id"])) {

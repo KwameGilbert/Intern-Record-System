@@ -1,1 +1,193 @@
-css
+/* Reset some default styles */
+body,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the form container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+h2,h3{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #555;
+}
+
+/* Apply styles to form fields and labels */
+label {
+    display: block;
+    width: 90%; /* Adjust the width as needed */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+p label{
+    width: 50%; /* Adjust the width as needed */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="time"],
+input[type="date"],
+input[type="radio"],
+input[type="year"] {
+    width: 90%; /* Adjust the width as needed */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Apply styles to form fields and labels under radio_q */
+.radio_q label {
+    display: inline-block;
+    width: 40%; /* Adjust the width as needed */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.radio_q input[type="radio"] {
+    display: inline-block;
+    width: 10%; /* Adjust the width as needed */
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
+/* Apply styles to the form header */
+.form-header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/* Apply styles to the form header */
+.form-header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Apply styles to the form footer */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Apply styles to error messages (optional) */
+.error-message {
+    color: #f44336;
+    margin-bottom: 10px;
+}
+
+/* Apply styles to the form buttons */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"],
+.cancel-button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.cancel-button:hover {
+    background-color: #ddd;
+}
+
+/* CSS for the pop-up modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: #fff; /* White background for the modal */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-message {
+    font-size: 18px;
+    color: #333; /* Text color */
+}
+
+.modal-button {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #4CAF50; /* Green button color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.modal-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
